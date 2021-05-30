@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.startBox{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Monserrat', sans-serif;
+}
+.startBox:after{
+    content: '';
+    position: absolute;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
+.startBox-nav,
+.startBox-info{
+    display: flex;
+}
+.startBox-nav{
+    background: rgba(0, 0, 0, 0.3);
+    height: 12vh;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    justify-content: flex-end;
+}
+.startBox-nav-ul{
+    padding-right: 5%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+#startBox-nav-ul-li-img{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 52%;
+}
+.startBox-nav-ul-li-img{
+    transition: 0.3s ease;
+}
+.startBox-nav-ul-li-img:hover{
+    transform: scale(1.1);
+}
+.startBox-nav-ul > a{
+    text-decoration: none;
+}
+.startBox-nav-ul-li{
+    color:#fff;
+    transition: all .3s ease;
+    font-weight: 540;
+}
+.startBox-nav-ul-li:hover{
+    color:#35c8f9;
+    cursor: pointer;
+}
+.startBox-info{
+    height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.startBox-info-imgBox{
+    width: 178px;
+    height: 178x;
+    overflow: hidden;
+    border-radius: 85px;
+    -webkit-box-shadow: 4px 2px 5px 2px rgba(33,33,33,0.74);
+    -moz-box-shadow: 4px 2px 5px 2px rgba(33,33,33,0.74);
+    box-shadow: 4px 2px 5px 2px rgba(33,33,33,0.74);
+}
+.startBox-info-img{
+    margin:20px 0 0 20px;
+    width: 135px;
+    height: 173px;
+    transform: scale(1.4);
+}
+.startBox-info-name,
+.startBox-info-nivel,
+.startBox-info-desarrollo,
+.footerBox-tituloBox-nombre,
+.footerBox-tituloBox-nivel{
+    color: white;
+}
+.startBox-info-name,
+.footerBox-tituloBox-nombre{
+    font-weight: 400;
+    margin:20px 0 0 0;
+    font-size: 25px;
+}
+.startBox-info-nivel,
+.footerBox-tituloBox-nivel{
+    margin: 5px 0 5px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.startBox-info-desarrollo{
+    font-size: 18px;
+    border: 3px solid white;
+    width: 340px;
+    margin: 28px 0 20px 0;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 24px;
+    background:transparent;
+}
+.startBox-info-button,
+.contactoBox-formBox-button{
+    border-radius: 18px;
+    border: none;
+    width: 216px;
+    height: 51px;
+    background:#35c8f9;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+.startBox-info-button:hover,
+.contactoBox-formBox-button:hover{
+    background: #03a5db;
+}
+.starBox-info-flecha{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+/* Sobre mi */
+
+.sobreMi{
+    background-color: #35c8f9;
+    height: 50vh;
+    font-family: 'Monserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobreMi-titulo{
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    color: white;
+}
+.sobreMi-descripcion{
+    color: white;
+    text-align: center;
+    padding: 0 9% 0 9%;
+    font-size: 18px;
+}
+
+/* Habilidades */
+
+.misHabilidades-box{
+    font-family: 'Monserrat', sans-serif;
+    background-color: #455a64;
+}
+.misHabilidades-box-titulo,
+.misHabilidades-box-titulo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.misHabilidades-box-titulo-misHabilidades{
+    font-size: 24px;
+    color: #35c8f9;
+    font-weight: 600;
+    margin: 5% 0 0 0 ;
+}
+.misHabilidades-box-titulo-lenguajes,
+.misHabilidades-box-titulo-frameworks{
+    font-size: 18px;
+    color: white;
+    margin-top: 1%;
+}
+.misHabilidades-box-img,
+.misHabilidades-box-img2{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 0 0 ;
+    padding-bottom: 5%;
+}
+.misHabilidades-box-img-imgBox{
+    padding: 0 2.5% 0 2.5%;
+}
+
+/* Portafolio */
+
+.portafolio-box-titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Monserrat', sans-serif;
+}
+.portafolio-box-titulo-portafolio{
+    font-size: 24px;
+    color: #35c8f9;
+    font-weight: 600;
+    margin: 5% 0 0 0 ;
+}
+.portafolio-box-titulo-trabajos{
+    color: #9b9b9b;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.portafolio-box-img{
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+.portafolio-box-imagen{
+    position: relative;
+    float: left;
+    width: 310px;
+    height: 280px;
+    cursor: pointer;
+    border-radius: 5%;   
+}
+.portafolio-box-img-imgBox{
+    font-family: 'Monserrat', sans-serif;
+    position: relative;
+    color: white;
+}
+.portafolio-box-img-imgBox:hover .overlay{
+    opacity: 0.95;
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: #35c8f9;
+    cursor: default;
+    border-radius: 5%;
+}
+.overlay > div > h4,
+.overlay > div > p{
+    font-size: 24px;
+}
+.overlay > div > a > button{
+    font-family: 'Monserrat', sans-serif;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 180px;
+    height: 36px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.overlay > div > a >button:hover{
+    background-color: white;
+    color: #35c8f9;
+}
+
+/* Contacto */
+
+.contactoBox{
+    background-color: #455a64;
+    padding-bottom: 5%;
+}
+.contactoBox-tituloBox{
+    padding-top: 5%;
+    margin: 7% 0 0 0;
+    font-family: 'Monserrat', sans-serif;
+    text-align: center;
+}
+.contactoBox-tituloBox-titulo{
+    color: #35c8f9;
+    margin-bottom: 4px;
+}
+.contactoBox-tituloBox-subTitulo{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1%;
+}
+.contactoBox-formBox1,
+.contactoBox-formBox2{
+    display: flex;
+    align-items: center;
+}
+.contactoBox-formBox1{
+    justify-content: space-around;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 2%;
+}
+.contactoBox-formBox2{
+    flex-direction: column;
+}
+.contactoBox-formBox1 > input,
+.contactoBox-formBox2-input{
+    background-color: transparent;    
+    border: none;
+    border-bottom: 2px solid #37474f;
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    padding: 20px 4px 6px 4px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+.contactoBox-formBox2-input{
+    width: 400px;
+}
+.contactoBox-formBox1 > input:focus,
+.contactoBox-formBox2-input:focus{
+    outline: none;
+    border-bottom-color: #35c8f9;
+}
+.contactoBox-formBox1 > input::placeholder,
+.contactoBox-formBox2-input::placeholder{
+    color: white;
+    font-weight: 100;
+    transition: 0.3s ease;
+}
+.contactoBox-formBox1 > input:focus::placeholder,
+.contactoBox-formBox2-input:focus::placeholder{
+    color: #37474f;
+}
+.contactoBox-formBox-button{
+    margin-top: 3%;
+}
+
+/* Footer */
+
+footer{
+    font-family: 'Monserrat', sans-serif;
+}
+.footerBox{
+    background-color: #455a64;
+    text-align: center;
+}
+.footerBox-tituloBox{
+    padding-top: 1%;
+}
+.footerBox-redes{
+    margin-top: 24px;
+    padding-bottom: 3%;
+}
+.footerBox-redes-icon{
+    color: white;
+    font-size: 30px;
+    margin-right: 8px;
+    transition: 0.3s ease;
+}
+.footerBox-redes > a:link, a:visited, a:active{
+    text-decoration: none;
+}
+.footerBox-redes-icon:hover{
+    color: #03a5db;
+}
+.footerBox-copy{
+    background-color: #282929;
+    font-family: 'Monserrat', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 2% 0 2% 0;
+}
+.footerBox-copy > h5 > a{
+    color: #005ba5;
+    text-decoration: none;
+}
+.footerBox-copy > h5 > a:hover{
+    color: #039acc;
+}

@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Jose Cordoba - Desarrollador Web</title>
+    <link rel="stylesheet" href="{% static 'portafolio/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{% static 'portafolio/img/favicon.png' %}">
+</head>
+<body>
+    <section id="start">
+        <div class="startBox">
+            <div class="startBox-nav">
+                <div id="startBox-nav-ul-li-img">
+                    <a href="#"><img class="startBox-nav-ul-li-img" src="{% static 'portafolio/img/icono32.png' %}" alt=""></a>
+                </div>
+                <ul class="startBox-nav-ul">
+                    <a href="#sobre-mi"><li class="startBox-nav-ul-li">Sobre mi</li></a>
+                    <a href="#habilidades"><li class="startBox-nav-ul-li">Habilidades</li></a>
+                    <a href="#portafolio"><li class="startBox-nav-ul-li">Portafolio</li></a>
+                    <a href="#contacto"><li class="startBox-nav-ul-li">Contacto</li></a>
+                </ul>
+            </div>
+            <div class="startBox-info">
+                <div class="startBox-info-imgBox">
+                    <img class="startBox-info-img" src="{% static 'portafolio/img/fotoPerfil.jpg' %}" alt="">
+                </div>
+                <h3 class="startBox-info-name">Juan Jose <strong>Cordoba</strong></h3>
+                <h4 class="startBox-info-nivel">Programador Jr.</h4>
+                <span class="startBox-info-desarrollo">&lt;  DESARROLLO WEB  /&gt;</span>
+                <a href="#contacto"><button type="button" class="startBox-info-button">¡Contactame!</button></a>
+            </div>
+            <div class="starBox-info-flecha">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    <section id="sobre-mi">
+        <div class="sobreMi">
+            <h2 class="sobreMi-titulo">SOBRE MÍ</h2>
+            <p class="sobreMi-descripcion">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur, sapiente optio accusamus perspiciatis magni debitis eius facere. 
+                Aspernatur sit quae libero ea, iste architecto perferendis autem iusto temporibus! 
+                Vitae earum reiciendis, corrupti ullam non dignissimos dolorum minus odio, quas, debitis illo! 
+                In pariatur excepturi modi nobis, esse cum consequatur possimus!
+            </p>
+        </div>
+
+    </section>
+    <section id="habilidades">
+        <div class="misHabilidades-box">
+            <div class="misHabilidades-box-titulo">
+                <h2 class="misHabilidades-box-titulo-misHabilidades">MIS HABILIDADES</h2>
+                <h3 class="misHabilidades-box-titulo-lenguajes">LENGUAJES</h3>
+            </div>
+            <div class="misHabilidades-box-img">
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/html.png' %}" alt="Html Icono">
+                </div>
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/css.png' %}" alt="Css Icono">
+                </div>
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/javascript.png' %}" alt="Css Icono">
+                </div>
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/python.png' %}" alt="Css Icono">
+                </div>
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/php.png' %}" alt="Css Icono">
+                </div>
+            </div>
+            <div class="misHabilidades-box-titulo2">
+                <h3 class="misHabilidades-box-titulo-frameworks">FRAMEWORKS</h3>
+            </div>
+            <div class="misHabilidades-box-img2">
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/django.png' %}" alt="Css Icono">
+                </div>              
+                <div class="misHabilidades-box-img-imgBox">
+                    <img src="{% static 'portafolio/img/laravel.png' %}" alt="Css Icono">
+                </div>              
+            </div>
+        </div>
+    </section>
+    <section id="portafolio">
+        <div class="portafolio-box">
+            <div class="portafolio-box-titulo">
+                <h2 class="portafolio-box-titulo-portafolio">PORTAFOLIO</h2>
+                <H3 class="portafolio-box-titulo-trabajos">MIS TRABAJOS</H3>
+            </div>
+            <div class="portafolio-box-img">
+                <div class="portafolio-box-img-imgBox">
+                    <img class="portafolio-box-imagen" src="{% static 'portafolio/img/portafolioImg.png' %}" alt="Portafolio">
+                    <div class="overlay">
+                        <div>
+                            <h4>PORTAFOLIO</h4><br>
+                            <p>Desarrollo de página web con HTML, CSS y Django para el BackEnd</p><br>
+                            <a href="#"><button>IR A PÁGINA</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="portafolio-box-img-imgBox">
+                    <img class="portafolio-box-imagen" src="" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4></h4><br>
+                            <p></p><br>
+                            <a href="#"><button></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-box-img-imgBox">
+                    <img class="portafolio-box-imagen" src="" alt="">
+                    <div class="overlay">
+                        <div>
+                            <h4></h4><br>
+                            <p></p><br>
+                            <a href="#"><button></button></a>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contacto">
+        <div class="contactoBox">
+            <div class="contactoBox-tituloBox">
+                <h2 class="contactoBox-tituloBox-titulo">CONTACTO</h2>
+                <h3 class="contactoBox-tituloBox-subTitulo">ESCRÍBEME Y TRABAJEMOS JUNTOS</h3>
+            </div>
+            <div class="contactoBox-formBox">
+                <form action="{% url 'portafolio:registrarContacto' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="contactoBox-formBox1">
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <input type="text" placeholder="Correo" name="correo" required>
+                        <input type="text" placeholder="Asunto" name="asunto" required>
+                    </div>
+                    <div class="contactoBox-formBox2">
+                        <input type="text" class="contactoBox-formBox2-input" placeholder="Mensaje" name="mensaje" required>
+                        <button type="submit" class="contactoBox-formBox-button">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerBox">
+            <div class="footerBox-tituloBox">
+                <h3 class="footerBox-tituloBox-nombre">Juan Jose <strong>Cordoba</strong></h3>
+                <h4 class="footerBox-tituloBox-nivel">Programador Jr.</h4>
+            </div>
+            <div class="footerBox-redes">
+                <a href="https://www.linkedin.com/in/juan-jose-c-2b02951a0/">
+                    <i class="fab fa-linkedin footerBox-redes-icon"></i>
+                </a>
+                <a href="https://github.com/juancordoba00">
+                    <i class="fab fa-github-square footerBox-redes-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footerBox-copy">
+            <h5>Desarrollado por <a href="#">Juan Jose Cordoba</a>. Copyright 2021</h5>
+        </div>
+    </footer>
+
+    
+    <script src="https://kit.fontawesome.com/c6f6d15d46.js" crossorigin="anonymous"></script>
+</body>
+</html>
